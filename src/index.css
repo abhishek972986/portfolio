@@ -1,0 +1,511 @@
+@import "tailwindcss";
+*{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: 'CanopeeRegular';
+  src: url('./assets/CanopeeRegular.otf') format('opentype'); /* Fixed format */
+  font-weight: normal;
+  font-style: normal;
+}
+.headwork{
+  font-family: "Rowdies", sans-serif;
+}
+
+.headbold {
+  font-family: 'CanopeeRegular', sans-serif;
+}
+ 
+
+.headon{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+}
+.headin{
+    font-family: "Boldonse", system-ui;
+}
+.inverted-corner::before {
+    content: "";
+    position: absolute;
+    top: -0px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border-radius: 20px 0px 0px 0px;
+    box-shadow: -10px  -20px 0 0px #f3f3f5;
+  }
+
+  .inverted-corner::after {
+    content: "";
+    position: absolute;
+    bottom: -33px;
+    left: -0px;
+    width: 24px;
+    height: 40px;
+    background:transparent;
+    border-radius: 20px 0px 0px 0px;
+    box-shadow: -10px  -15px 0 0px #f3f3f5;
+  }
+  
+  .inver-corner::before {
+    content: "";
+    position: absolute;
+    top: -0px;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 10px  -20px 0 0px #f3f3f5;
+  }
+
+  .inver-corner::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: -0px;
+    width: 24px;
+    height: 40px;
+    background:transparent;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 10px  -20px 0 0px #f3f3f5;
+  }
+
+  .corner::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: 10px  20px 0 0px #f3f3f5;
+  }
+
+  .corner::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: 10px  20px 0 0px #f3f3f5;
+  }
+
+  .spining-text{
+    animation: spin-slow 5s linear infinite ;
+    font-family: "Tektur", sans-serif;
+  }
+  @keyframes spin-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .circle-text{
+    font-family: "Tektur", sans-serif;
+  }
+  .up-down{
+    animation: up-down 1s ease-out infinite;
+  }
+  @keyframes up-down {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(10px); color: green; }
+    100% { transform: translateY(0px); }
+  }
+
+  .color-change{
+    animation : color-change 1s linear infinite;
+  }
+
+  @keyframes color-change {
+    0% {color: black;}
+    50%{ color: greenyellow; text-shadow: 3px;}
+    100%{ color: black; text-shadow: none;}
+  }
+
+
+
+  .bottomline {
+    position: relative;
+    display: inline-block; /* Ensures the line is only as wide as the content */
+}
+
+.bottomline::before {
+    content: "";
+    height: 2px;
+    background-color: green;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.bottomline:hover::before {
+    width: 100%;
+}
+
+
+/* moving bar */
+
+
+
+.page3{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+height:300px;
+  
+}
+.page3 .card{
+  display: flex;
+border-radius: 20px;
+  align-items: center; 
+  width: 100%;
+height: 40px;
+  position: relative;
+
+}
+.cards{
+border-radius: 15px;
+border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+  position: absolute;
+
+  right: -300px;
+  animation: infinity 12s linear infinite;
+}
+.card1  { animation-delay: -15s; }
+.card2  { animation-delay: -13.5s; }
+.card3  { animation-delay: -12s; }
+.card4  { animation-delay: -10.5s; }
+.card5  { animation-delay: -9s; }
+.card6  { animation-delay: -7.5s; }
+.card7  { animation-delay: -6s; }
+.card8  { animation-delay: -4.5s; }
+.card9  { animation-delay: -3s; }
+.card10 { animation-delay: -1.5s; }
+.card11 { animation-delay: 0s; }
+
+
+
+
+.card:hover .cards{
+  animation-play-state: paused;
+}
+
+@keyframes infinity {
+  0%{
+      transform: translate(0%);
+  }
+
+  100%{
+      transform: translate(-120vw);
+  }
+}
+.page3{
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+@media (max-width:600px) {
+ 
+  @keyframes infinity {
+    0%{
+        transform: translate(0%);
+    }
+
+    100%{
+        transform: translate(-180vw);
+    }
+  }
+
+}
+
+@media (max-width:1400px) {
+  
+  @keyframes infinity {
+    0%{
+        transform: translate(0%);
+    }
+
+    100%{
+        transform: translate(-200vw);
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page4{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+height:300px;
+  
+}
+.page4 .carder{
+  display: flex;
+border-radius: 20px;
+  align-items: center; 
+  width: 100%;
+height: 40px;
+  position: relative;
+
+}
+.carders{
+border-radius: 15px;
+border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+  position: absolute;
+
+  right: -300px;
+  animation: infinitys 12s linear infinite;
+}
+.carder1  { animation-delay: -15s; }
+.carder2  { animation-delay: -13.5s; }
+.carder3  { animation-delay: -12s; }
+.carder4  { animation-delay: -10.5s; }
+.carder5  { animation-delay: -9s; }
+.carder6  { animation-delay: -7.5s; }
+.carder7  { animation-delay: -6s; }
+.carder8  { animation-delay: -4.5s; }
+.carder9  { animation-delay: -3s; }
+.carder10 { animation-delay: -1.5s; }
+.carder11 { animation-delay: 0s; }
+
+
+
+.carder:hover .carders{
+  animation-play-state: paused;
+}
+
+@keyframes infinitys {
+  0%{
+      transform: translate(-120vw);
+  }
+
+  100%{
+      transform: translate(0%);
+  }
+}
+.page4{
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+@media (max-width:600px) {
+ 
+  @keyframes infinitys {
+    0%{
+        transform: translate(180vw);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+  }
+
+}
+
+@media (max-width:1400px) {
+  
+  @keyframes infinitys {
+    0%{
+        transform: translate(200vw);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+  }
+}
+
+
+.cards::before{
+  font-weight: bolder;
+  font-size: 40px;
+  cursor: pointer;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  content: "Projects →";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width:100%;
+  height: 0%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.cards:hover::before{
+  opacity: 0.8;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+
+
+.carders::before{
+  font-weight: bolder;
+  font-size: 40px;
+  cursor: pointer;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  content: "Projects →";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width:100%;
+  height: 0%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.carders:hover::before{
+  opacity: 0.8;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+
+
+
+
+.work{
+  position: relative;
+}
+.work::before{
+  content: "";
+  position: absolute;
+  bottom: -0px;
+ z-index: -1;
+  width: 100%;
+  height: 40%;
+  background-color:greenyellow;
+  border-radius: 20px 0px 0px 0px;
+  box-shadow: -10px -20px 0 0px #f3f3f5;
+}
+
+
+.works {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.works::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  background: linear-gradient(135deg, #facc15, #fef08a);
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 -20px 40px rgba(250, 204, 21, 0.3), inset 0 -5px 10px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  animation: floatyBackground 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatyBackground {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* cornering */
+
+.cornering::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background:transparent;
+  border-radius: 0px 0px 20px 0px;
+  box-shadow: 10px  20px 0 0px white;
+}
+
+.cornering::after {
+  content: "";
+  position: absolute;
+  top: -42px;
+  right: 1px;
+  width: 40px;
+  height: 40px;
+  background:transparent;
+  border-radius: 0px 0px 20px 0px;
+  box-shadow: 10px  20px 0 0px white;
+}
+
+
+
+
+.inver-cornering::before {
+  content: "";
+  position: absolute;
+  top: -0px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  background:transparent;
+  border-radius: 20px 0px 0px 0px;
+  box-shadow: -10px  -20px 0 0px white;
+}
+
+.inver-cornering::after {
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  left: -0px;
+  width: 24px;
+  height: 40px;
+  background:transparent;
+  border-radius: 20px 0px 0px 0px;
+  box-shadow: -10px  -15px 0 0px white;
+}
