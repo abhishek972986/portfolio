@@ -17,7 +17,7 @@ import Work from './Work';
 import {motion} from 'framer-motion'
 const Home = () => {
   return (
-    <div className='h-screen p-3 w-full'>
+    <div className='h-screen p-3 w-full overflow-x-hidden'>
     <div className='h-screen w-full p-6  bg-[#f3f3f5] rounded-2xl border'>
       <motion.div className='flex justify-around items-center h-[100px]' 
       initial={{ opacity: 0, y: -50 }}
@@ -65,11 +65,12 @@ const Home = () => {
             </span>
           </div>
         </div>
-
+     
       </motion.div>
    {/* Main home  */}
+   
       <div className=' grid mt-5 grid-cols-2 w-full h-[97%] gap-5 relative'>
-        <div className='absolute left-[48.55%] top-[45.5%] z-10 text-6xl'>🦊</div>
+      <div className='absolute left-[48.7%] top-[46%] z-10 text-6xl '>🦊</div>
       <div className="w-40 h-40 absolute left-[46.5%] top-[40%] bg-white/10 backdrop-blur-3xl border border-white/30 rounded-full flex justify-center items-center spining-text shadow-2xl ">
   {[' '," ","W", "E", "B"].map((letter, index) => (
     <span

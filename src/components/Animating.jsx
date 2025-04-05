@@ -7,13 +7,13 @@ const Animating = () => {
   const height = useTransform(scrollY, [0, 3300], ["0%", "100%"]);
 
   return (
-    <div className="relative min-h-[100vh]">
+    <div className="relative min-h-[100vh] z-10 overflow-x-hidden">
       <motion.div
         className="w-[24px] bg-purple absolute left-[50%] z-20"
         style={{ height }}
       />
       {/* Animated Section */}
-      <motion.div className="w-full rounded-2xl bg-[#f3f3f5] border h-[120vh] page2">
+      <motion.div className="w-full rounded-2xl bg-[#f3f3f5] border lg:min-h-[123vh] md:min-h-[150vh] page2">
         <motion.div
           className="headbold text-center text-8xl font-bold w-full my-10 bottombar"
           initial={{ opacity: 0, y: -50 }}
@@ -42,9 +42,9 @@ const Animating = () => {
             }}
             viewport={{ once: true, amount: 0.3 }}
             whileHover={{ scale: 1.01, rotate: 10 }}
-            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute right-[25%] top-[50px]"
+            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute lg:right-[25%] lg:top-[50px] md:top-[30px] md:right-[10%]"
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center md:max-h-[150px] lg:max-h-full">
               <img
                 className="h-1/2 w-1/2 object-cover"
                 src={html}
@@ -62,6 +62,7 @@ const Animating = () => {
           {/* CSS Card */}
           <motion.div
             initial={{ opacity: 0, x: "-100%" }}
+          
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: "spring",
@@ -72,9 +73,9 @@ const Animating = () => {
             }}
             viewport={{ once: true, amount: 1 }}
             whileHover={{ scale: 1.01, rotate: -10 }}
-            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute left-[30%] top-[250px]"
+            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute lg:left-[30%] lg:top-[230px] md:top-[230px]  z-10"
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center md:max-h-[150px] lg:max-h-full">
               <img
                 className="h-1/2 w-1/2 object-cover"
                 src={html}
@@ -102,9 +103,9 @@ const Animating = () => {
             }}
             viewport={{ once: true, amount: 0.3 }}
             whileHover={{ scale: 1.01, rotate: 10 }}
-            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute right-[25%] top-[450px]"
+            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute lg:right-[25%] lg:top-[400px] md:top-[350px] md:right-[10%]"
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center md:max-h-[150px] lg:max-h-full">
               <img
                 className="h-1/2 w-1/2 object-cover"
                 src={html}
@@ -132,9 +133,9 @@ const Animating = () => {
             }}
             viewport={{ once: true, amount: 0.3 }}
             whileHover={{ scale: 1.01, rotate: -10 }}
-            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute left-[30%] top-[650px]"
+            className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border absolute lg:left-[30%] lg:top-[630px] md:top-[630px] md:left-[10%]"
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center md:max-h-[150px] lg:max-h-full">
               <img
                 className="h-1/2 w-1/2 object-cover"
                 src={html}

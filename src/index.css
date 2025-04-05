@@ -292,6 +292,8 @@ border: 2px solid black;
   right: -300px;
   animation: infinitys 12s linear infinite;
 }
+
+
 .carder1  { animation-delay: -15s; }
 .carder2  { animation-delay: -13.5s; }
 .carder3  { animation-delay: -12s; }
@@ -327,7 +329,9 @@ border: 2px solid black;
 }
 
 @media (max-width:600px) {
- 
+ .carders{
+  left:-300px;
+ }
   @keyframes infinitys {
     0%{
         transform: translate(180vw);
@@ -341,10 +345,12 @@ border: 2px solid black;
 }
 
 @media (max-width:1400px) {
-  
+  .carders{
+    right:-900px;
+  }
   @keyframes infinitys {
     0%{
-        transform: translate(200vw);
+        transform: translate(-200vw);
     }
 
     100%{
