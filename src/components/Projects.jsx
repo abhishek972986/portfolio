@@ -6,9 +6,9 @@ const Projects = () => {
   return (
     <Link to='/projects'>
     <div className='w-full h-full min-h-screen bg-[#f3f3f5] border rounded-2xl p-6 mt-6'>
-      <div className='headbold text-center text-8xl font-bold bottombar'>Projects</div>
+      <div className='headbold text-center text-6xl font-bold bottombar'>Projects</div>
 
-      <div className='h-full'>
+      <div className='h-[110%]'>
       <MovingBar/>
       </div>
     </div>

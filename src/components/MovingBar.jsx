@@ -11,14 +11,14 @@ import project10 from '../assets/project10.webp'
 
 const MovingBar = () => {
   return (
-    <>
-      <div className="page3 mt-10 overflow-hidden">
+    <div className='flex flex-col justify-around'>
+      <div className="page3 mt-5 overflow-hidden ">
         <div className="card flex flex-wrap justify-center sm:flex-row items-center w-full gap-4">
           
           <div className="cards carder1 flex items-center gap-2 text-sm sm:text-lg md:text-2xl relative">
             <img 
               src={project1} 
-              className="w-full h-auto md:w-[270px] md:h-[270px] rounded-2xl" 
+              className="w-full h-auto md:w-[250px] md:h-[250px] rounded-2xl" 
               alt="" 
             />
           </div>
@@ -90,7 +90,7 @@ const MovingBar = () => {
       </div>
 
       {/* Moving bar 2 */}
-      <div className="page4 mt-10 overflow-hidden">
+      <div className="page4 mt-5 overflow-hidden">
         <div className="carder flex flex-wrap justify-center sm:flex-row items-center w-full gap-4">
           
           <div className="carders carder1 flex items-center gap-2 text-sm sm:text-lg md:text-2xl">
@@ -166,7 +166,7 @@ const MovingBar = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

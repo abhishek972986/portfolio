@@ -17,8 +17,8 @@ import Work from './Work';
 import {motion} from 'framer-motion'
 const Home = () => {
   return (
-    <div className='h-screen p-3 w-full overflow-x-hidden'>
-    <div className='h-screen w-full p-6  bg-[#f3f3f5] rounded-2xl border'>
+    <div className='h-full p-3 w-full overflow-x-hidden'>
+    <div className='h-full w-full p-6  bg-[#f3f3f5] rounded-2xl border'>
       <motion.div className='flex justify-around items-center h-[100px]' 
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -69,15 +69,15 @@ const Home = () => {
       </motion.div>
    {/* Main home  */}
    
-      <div className=' grid mt-5 grid-cols-2 w-full h-[97%] gap-5 relative'>
-      <div className='absolute left-[48.7%] top-[46%] z-10 text-6xl '>🦊</div>
-      <div className="w-40 h-40 absolute left-[46.5%] top-[40%] bg-white/10 backdrop-blur-3xl border border-white/30 rounded-full flex justify-center items-center spining-text shadow-2xl ">
+      <div className=' grid mt-5 grid-cols-2 w-full h-[100%] gap-5 relative'>
+      <div className='absolute left-[49.5%] top-[46.9%] z-10 text-3xl '>🦊</div>
+      <div className="w-30 h-30 absolute left-[46.5%] top-[40%] bg-white/10 backdrop-blur-3xl border border-white/30 rounded-full flex justify-center items-center spining-text shadow-2xl ">
   {[' '," ","W", "E", "B"].map((letter, index) => (
     <span
       key={index}
-      className="absolute  font-bold text-black circle-text"
+      className="absolute text-xs font-bold text-black circle-text"
       style={{
-        transform: `rotate(${index==1?40:index*20+45  }deg) translate(70px) `,
+        transform: `rotate(${index==1?40:index*20+45  }deg) translate(50px) `,
       }}
     >
       {letter}
@@ -87,9 +87,9 @@ const Home = () => {
   {[" ","D", "E", "V", "E", "L", "O", "P", "M", "E", "N", "T"].map((letter, index) => (
     <span
       key={index}
-      className="absolute  font-bold text-black circle-text"
+      className="absolute  font-bold text-xs text-black circle-text"
       style={{
-        transform: `rotate(${index * 18 + 180}deg) translate(70px) rotate(-${index * 18 + 180}deg)`,
+        transform: `rotate(${index * 18 + 180}deg) translate(50px) rotate(-${index * 18 + 180}deg)`,
       }}
     >
       {letter}
@@ -104,20 +104,21 @@ const Home = () => {
 
 
         {/* right home */}
-<div className='w-full h-[90%]  p-4 flex flex-col justify-around'>
-<motion.div className='flex items-center headin text-8xl justify-start gap-15 tracking-wider' 
+<div className='w-full h-[100%]  p-4 flex flex-col justify-around'>
+<motion.div className='flex items-center headin text-7xl justify-start gap-15 tracking-wider' 
 initial={{opacity:0 , y:60}}
 
 animate={{opacity:1 , y:0}}
 transition={{duration:1, ease:"easeInOut", type:"spring"}}
 viewport={{ once: true, amount: 0.2 }}>
 
-Look <div className=' border-3 text-7xl font-extrabold flex items-center gap-4 text-[#74d4cf] border-[#74d4cf] rounded-full pt-4.5 px-5'>
+Look <div className=' border-3 text-5xl font-extrabold flex items-center gap-4 text-[#74d4cf] border-[#74d4cf] rounded-full pt-4.5 px-5'>
   <div>*</div>
 <div>*</div>
-<div>*</div></div></motion.div>
-
-<motion.div className='flex items-center headin text-8xl justify-center gap-18'
+<div>*</div></div>
+</motion.div>
+<br />
+<motion.div className='flex items-center headin text-7xl justify-center gap-18'
 initial={{opacity:0 , y:60}}
 
 animate={{opacity:1 , y:0}}
@@ -127,17 +128,19 @@ viewport={{ once: true, amount: 0.2 }}>
 beyond
 
 </motion.div>
-
+<br />
 <div className='flex gap-3'>
-<motion.div className='flex items-center headin text-8xl justify-center'
+<motion.div className='flex items-center headin text-7xl justify-center'
 initial={{opacity:0 , y:60}}
 
 animate={{opacity:1 , y:0}}
 transition={{duration:1, ease:"easeInOut", type:"spring"}}
 viewport={{ once: true, amount: 0.2 }}>limits</motion.div>
-<div className='flex items-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br/> Minima, voluptatibus. Commodi minus labore dignissimos aperiam atque, temporibus repudiandae ut tenetur veritatis. Repellendus fugit ratione 
+<div className='flex items-center text-xs'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, voluptatibus. Commodi minus labore dignissimos aperiam atque, temporibus repudiandae ut tenetur veritatis. Repellendus fugit ratione 
 .</div>
 </div>
+<br />
+<br />
 <motion.div  className='flex justify-center items-center gap-4'
 initial={{opacity:0 , x:-200}}
 
@@ -171,11 +174,11 @@ viewport={{ once: true, amount: 0.2 }}>
   />
 </AvatarGroup>
 
-    <div className='headin text-xl font-bold'>10.2k+
+    <div className='headin  font-bold'>10.2k+
       <div className='headon'>Clients trust Me !!</div>
     </div>
     </motion.div>
-
+<br />
 <motion.div 
 initial={{opacity:0 , y:160}}
 
@@ -192,7 +195,7 @@ viewport={{ once: true, amount: 0.2 }}>
 
 {/* ?left home */}
 <div 
-  className="h-[90%] rounded-2xl shadow-2xs" 
+  className="h-[100%] rounded-2xl shadow-2xs" 
   style={{ backgroundImage: `url(${img5})`, backgroundSize: "cover", backgroundPosition: "center" }}
 >
 
@@ -243,3 +246,4 @@ viewport={{ once: true, amount: 0.2 }}>
 }
 
 export default Home;
+

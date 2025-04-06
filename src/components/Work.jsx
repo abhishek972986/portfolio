@@ -14,7 +14,7 @@ const Work = () => {
     <div className='min-h-screen w-full bg-white border rounded-2xl p-3 sm:p-6 mt-6'>
 
       {/* Header */}
-      <div className='headbold text-center text-5xl sm:text-6xl md:text-8xl font-bold bottombar'>mY WORK</div>
+      <div className='headbold text-center text-5xl  md:text-6xl font-bold bottombar'>mY WORK</div>
 
       {/* Video and Testimonials Grid */}
       <div className='w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5 md:gap-7 mt-2 sm:mt-4'>
@@ -47,7 +47,7 @@ const Work = () => {
         <div className="w-full h-full flex flex-col gap-3 sm:gap-4 md:gap-5 justify-self-end">
 
           {/* Testimonial Card 1 */}
-          <div className='h-[160px] sm:h-[190px] md:h-[220px] w-full bg-[#f3f3f5] rounded-2xl flex flex-col gap-2 sm:gap-3 md:gap-5 justify-around p-4 sm:p-5 md:p-7 relative border-t-4 border-green-600'>
+          <div className='h-[160px] sm:h-[190px] md:h-[200px] w-full bg-[#f3f3f5] rounded-2xl flex flex-col gap-2 sm:gap-3 md:gap-5 justify-around p-4 sm:p-5 md:p-7 relative border-t-4 border-green-600'>
             <div className='flex text-yellow-500'><FaStar /><FaStar /><FaStar /><FaStar /></div>
             <div className='text-xs sm:text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat eos, vel ipsum maxime autem optio inventore magni corrupti corporis accusamus iure.</div>
             <div className='flex items-center gap-3 sm:gap-5'>
@@ -65,7 +65,7 @@ const Work = () => {
           </div>
 
           {/* Testimonial Card 2 */}
-          <div className='h-[160px] sm:h-[190px] md:h-[220px] w-full bg-[#f3f3f5] rounded-2xl flex flex-col gap-2 sm:gap-3 md:gap-5 justify-around p-4 sm:p-5 md:p-7 relative border-t-4 border-yellow-300'>
+          <div className='h-[160px] sm:h-[190px] md:h-[200px] w-full bg-[#f3f3f5] rounded-2xl flex flex-col gap-2 sm:gap-3 md:gap-5 justify-around p-4 sm:p-5 md:p-7 relative border-t-4 border-yellow-300'>
             <div className='flex text-yellow-500'><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
             <div className='text-xs sm:text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat eos, vel ipsum maxime autem optio inventore magni corrupti corporis accusamus iure.</div>
             <div className='flex items-center gap-3 sm:gap-5'>
@@ -83,7 +83,7 @@ const Work = () => {
           </div>
 
           {/* Testimonial Card 3 */}
-          <div className='h-[160px] sm:h-[190px] md:h-[220px] w-full bg-[#f3f3f5] rounded-2xl flex flex-col gap-2 sm:gap-3 md:gap-5 justify-around p-4 sm:p-5 md:p-7 relative border-t-4 border-purple-400'>
+          <div className='h-[160px] sm:h-[190px] md:h-[200px] w-full bg-[#f3f3f5] rounded-2xl flex flex-col gap-2 sm:gap-3 md:gap-5 justify-around p-4 sm:p-5 md:p-7 relative border-t-4 border-purple-400'>
             <div className='flex text-yellow-500'><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
             <div className='text-xs sm:text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat eos, vel ipsum maxime autem optio inventore magni corrupti corporis accusamus iure.</div>
             <div className='flex items-center gap-3 sm:gap-5'>
