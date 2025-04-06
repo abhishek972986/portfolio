@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Contact = () => {
   return (
     <Link to='/contact'>
-    <div className="h-screen w-full relative flex items-center justify-center overflow-hidden mt-6 border rounded-2xl p-5">
+    <div className="h-screen w-full relative flex items-center justify-center overflow-hidden mt-6 border rounded-2xl ">
       <div className='w-50 bg-[#f3f3f5] h-50 absolute bottom-0 z-100 right-0'></div>
       {/* Spline as Full Background */}
       <div className="absolute inset-0 w-full h-full">
@@ -12,7 +12,7 @@ const Contact = () => {
       </div>
 
       {/* Centered Contact Form */}
-      <div className="relative z-10 w-[40%] p-8 backdrop-blur-lg bg-white/10 rounded-2xl border shadow-lg">
+      <div className="relative z-10 w-[40%] p-8 backdrop-blur-lg bg-white/10 rounded-2xl border shadow-lg my-5">
         <h2 className="text-center text-8xl font-bold mb-6 headbold">
           Contact <span className="text-blue-500 headbold">Me</span>
         </h2>
