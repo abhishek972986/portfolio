@@ -12,7 +12,7 @@ const Contact = () => {
       </div>
 
       {/* Centered Contact Form */}
-      <div className="relative z-10 w-[40%] p-8 backdrop-blur-lg bg-white/10 rounded-2xl border shadow-lg my-5">
+      <div className="relative z-10 w-[40%] p-8 backdrop-blur-lg bg-white/10 rounded-2xl border shadow-lg m-16">
         <h2 className="text-center text-8xl font-bold mb-6 headbold">
           Contact <span className="text-blue-500 headbold">Me</span>
         </h2>
