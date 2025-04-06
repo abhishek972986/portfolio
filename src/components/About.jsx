@@ -82,8 +82,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="w-[70%] h-[100%] pt-20">
-              <div className='w-full items-center flex flex-col justify-center gap-3'>
+            <div className="w-[70%] h-[100%] flex items-center flex-col justify-center  ">
+              <div className='w-full items-center flex flex-col justify-around gap-3'>
                 <div className='flex justify-around w-full'>
                   {["Skills", "Awards", "Experience", "Credits"].map((item, index) => (
                     <div

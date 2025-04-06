@@ -70,14 +70,16 @@ const Home = () => {
    {/* Main home  */}
    
       <div className=' grid mt-5 grid-cols-2 w-full h-[100%] gap-5 relative'>
-      <div className='absolute left-[49.5%] top-[46.9%] z-10 text-3xl '>🦊</div>
+      {/* <div className='absolute left-[49.5%] top-[46.9%] z-10 text-3xl '>🦊</div> */}
       <div className="w-30 h-30 absolute left-[46.5%] top-[40%] bg-white/10 backdrop-blur-3xl border border-white/30 rounded-full flex justify-center items-center spining-text shadow-2xl ">
-  {[' '," ","W", "E", "B"].map((letter, index) => (
+  {['🧔'," ","W", "E", "B"].map((letter, index) => (
     <span
       key={index}
-      className="absolute text-xs font-bold text-black circle-text"
+      className={`absolute font-bold text-black circle-text ${index === 0 ? 'text-4xl' : 'text-xs'}`}
+
       style={{
-        transform: `rotate(${index==1?40:index*20+45  }deg) translate(50px) `,
+        transform: `rotate(${index * 20 + 45}deg) translate(${index === 0 ? '0px' : '50px'})`
+
       }}
     >
       {letter}
